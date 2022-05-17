@@ -42,7 +42,7 @@
             </ul>
             <form action="" methode="post">
                 <input type="text" name="search">
-                <button type="submit"></button>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <!--iconLoupe-->
             </form>
             <div class="iconBurger">
@@ -50,32 +50,108 @@
             </div>
         </nav>
         <div id="headerImg">
-            <h1>Los Angeles</h1>
-            <p>We had the best time playing at Venice Beach !</p>
+            <h1 class="hide">Los Angeles</h1>
+            <p class="hide">We had the best time playing at Venice Beach!</p>
         </div>
     </header>
     <main>
         <section id="band">
-            <h2>THE BAND</h2>
-            <P>We love music</P>
+            <h1>THE BAND</h1>
+            <P><span class="italic">We love music</span></P>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum harum nobis eveniet, error ea itaque
                 quaerat est expedita provident nihil accusamus repellendus, recusandae impedit doloremque et non
                 molestiae quisquam! Blanditiis?</p>
-            <figure>
-                <figcaption>Name</figcaption>
-                <img src="./assets/img/bandmember.jpg" alt="">
-            </figure>
-            <figure>
-                <figcaption>Name</figcaption>
-                <img src="./assets/img/bandmember.jpg" alt="">
-            </figure>
-            <figure>
-                <figcaption>Name</figcaption>
-                <img src="./assets/img/bandmember.jpg" alt="">
-            </figure>
+            <div id="card">
+                <figure>
+                    <figcaption>Name</figcaption>
+                    <img src="./assets/img/bandmember.jpg" alt="">
+                </figure>
+                <figure>
+                    <figcaption>Name</figcaption>
+                    <img src="./assets/img/bandmember.jpg" alt="">
+                </figure>
+                <figure>
+                    <figcaption>Name</figcaption>
+                    <img src="./assets/img/bandmember.jpg" alt="">
+                </figure>
+            </div>
+        </section>
+        <section id="tour">
+            <h2>TOUR DATES</h2>
+            <p class="italic">Remember to book youir tickets !</p>
+            <div class="sold">
+                <p>September<span class="out">Sold out</span></p>
+                <hr>
+                <p>October<span class="out">Sold out</span></p>
+                <hr>
+                <p>November<span class="available">3</span></p>
+            </div>
+            <div id=cardTour>
+                <figure>
+                    <figcaption>
+                        <img src="./assets/img/newyork.jpg" alt="">
+                        <div class="bottomCard">
+                            <h3>New York</h3>
+                            <p class="date">Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="button">Buy Tickets</button>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <img src="./assets/img/paris.jpg" alt="">
+                        <div class="bottomCard">
+                            <h3>Paris</h3>
+                            <p class="date">Sat 28 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="button">Buy Tickets</button>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <figcaption>
+                        <img src="./assets/img/sanfran.jpg" alt="">
+                        <div class="bottomCard">
+                            <h3>San Francisco</h3>
+                            <p class="date">Sun 29 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="button">Buy Tickets</button>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <p class="italic">Fan? Drop a note!</p>
+            <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
+            <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
+            <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+            <form action="post">
+                <div>
+                    <input type="text" placeholder="Name" value="">
+                </div>
+                <div>
+                    <input type="email" placeholder="Email" value="">
+                </div>
+                <div>
+                    <input type="text" placeholder="Message" value="">
+                </div>
+                <div>
+                    <input id="send" type="submit" value="SEND">
+                </div>
+            </form>
+        </section>
+        <section id="map">
+            <div>
+                <img src="./assets/img/map.jpg" alt="">
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+
+    </footer>
 </body>
 
 </html>

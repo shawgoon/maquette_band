@@ -16,16 +16,23 @@ header nav form {
     color: white;
     text-decoration: none;
 }
+header nav a,
+.iconBurger{
+    padding: 0.5em 1em;
+}
 header nav a:first-child {
     display: block;
+}
+header nav a:hover,
+.iconBurger:hover{
+    background-color: rgb(121, 118, 118);
 }
 header nav {
     display: flex;
     justify-content: space-between;
     background-color: black;
     color: white;
-    padding: 0.5em 1em;
-}
+}    
 ul {
     list-style-type: none;
 }
@@ -35,4 +42,126 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color:white;
+}
+.hide{
+    display:none;
+}
+
+/* section band */
+
+#band{
+    
+}
+h1,
+h2,
+#band p,
+#band figure,
+.italic{
+    display: flex;
+    justify-content: center; 
+    margin: 1em;
+}
+h1,
+h2{
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+.italic{
+    font-style: italic;
+    color: #949494;
+}
+/* carte des membres */
+#card{
+    width: 60%;
+    margin: 0 auto;
+}
+#card figure
+{
+    display:flex;
+    flex-direction: column;       
+}
+
+#card figcaption{
+    text-align: center;
+    padding: 1em;  
+}
+#card img{
+    width: 100%;
+    border-radius: 0.2em;
+}
+
+/* section tour */
+
+#tour{
+    background-color: black;
+    padding-bottom: 2em;
+}
+#tour h2{
+    color: white;
+}
+/* div de disponibilité */
+.sold{
+    background-color: white;
+    display: flex;
+    flex-direction: column;  
+}
+hr{
+
+}
+.out{
+    background-color: red;
+    color: white;
+    
+    
+}
+.available{
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    float: right;
+}
+.sold,
+#cardTour,
+#contact{
+    width: 90%;
+    margin: 0 auto;
+}
+/* cartes des villes */
+#cardTour img{
+    width: 100%;
+    vertical-align: bottom;
+}
+#cardTour figcaption{
+    margin: 1.5em 0;
+}
+.bottomCard{
+    background-color: #fff;
+    margin-bottom: 1.5em;
+}
+
+/* section contact */
+
+#contact input{
+    width: 100%;
+}
+#send{
+    background-color: black;
+    color:white;
+    padding: 0.5em 1em;
+    border: none;
+    float: right;
+}
+
+/* section map */
+
+#map img{
+    width: 100%;
+    margin-top: 5em;
+    vertical-align: bottom;
 }
