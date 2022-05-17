@@ -54,9 +54,9 @@ ul {
 
 /* section band */
 
-#band{
+/*#band{
     
-}
+}*/
 h1,
 h2,
 #band p,
@@ -111,9 +111,9 @@ h2{
     display: flex;
     flex-direction: column;  
 }
-hr{
+/*hr{
 
-}
+}*/
 .out{
     background-color: red;
     color: white;
