@@ -11,7 +11,7 @@
 /* header */
 
 header nav a,
-header nav form {
+header nav form{
     display: none;
     color: white;
     text-decoration: none;
@@ -20,20 +20,21 @@ header nav a,
 .iconBurger{
     padding: 0.5em 1em;
 }
-header nav a:first-child {
+header nav a:first-child{
     display: block;
 }
 header nav a:hover,
-.iconBurger:hover{
+.iconBurger:hover,
+header form button:hover{
     background-color: rgb(121, 118, 118);
 }
-header nav {
+header nav{
     display: flex;
     justify-content: space-between;
     background-color: black;
     color: white;
 }    
-ul {
+header ul{
     list-style-type: none;
 }
 #headerImg{
@@ -47,6 +48,7 @@ ul {
     align-items: center;
     justify-content: flex-end;
     color:white;
+    margin-bottom: 3em;
 }
 .hide{
     display:none;
@@ -54,27 +56,28 @@ ul {
 
 /* section band */
 
-/*#band{
-    
-}*/
+#band{
+    padding-bottom: 4em;
+}
 h1,
 h2,
 #band p,
 #band figure,
 .italic{
     display: flex;
-    justify-content: center; 
-    margin: 1em;
+    justify-content: center;  
 }
 h1,
 h2{
     letter-spacing: 0.2rem;
     font-weight: 500;
-    font-size: 2.5rem;
 }
 .italic{
     font-style: italic;
+    font-size: small;
     color: #949494;
+    padding: 2.5em 0;
+    padding-top: 1.5em;
 }
 /* carte des membres */
 #card{
@@ -100,7 +103,8 @@ h2{
 
 #tour{
     background-color: black;
-    padding-bottom: 2em;
+    padding-top: 3em;
+    padding-bottom: 1em;
 }
 #tour h2{
     color: white;
@@ -108,27 +112,31 @@ h2{
 /* div de disponibilité */
 .sold{
     background-color: white;
+    color:#949494;
     display: flex;
     flex-direction: column;  
 }
-/*hr{
-
-}*/
+.sold p{   
+    padding: 0.5em;
+}
 .out{
     background-color: red;
     color: white;
-    
+    padding: 0.1em 0.3em;
+    margin-left: 1em;
     
 }
 .available{
     background-color: black;
     color: white;
+    padding: 0.1em 0.4em;
     border-radius: 50%;
     float: right;
 }
 .sold,
 #cardTour,
-#contact{
+#contact,
+#band p{
     width: 90%;
     margin: 0 auto;
 }
@@ -142,18 +150,55 @@ h2{
 }
 .bottomCard{
     background-color: #fff;
+    padding: 0.5em;
     margin-bottom: 1.5em;
+}
+.bottomCard *{
+    padding: 0.5em;
+}
+button{
+    margin: 0.5em;
+    padding: 1em;
+    border: none;
+    background-color: black;
+    color: white;
+}
+.date{
+    color:#949494;
 }
 
 /* section contact */
 
+#contact{
+    padding-top: 3em;
+    padding-bottom: 8em;
+}
+#contact i{
+    width: 1em;
+    margin-right: 1em;
+}
+#contact .icon p{
+    padding: 0.3em;
+}
+form{
+    margin-top: 1em;
+}
 #contact input{
     width: 100%;
+    box-sizing: border-box;
 }
-#send{
+#contact input {
+    padding: 0.7em;
+}
+.inputM{
+    margin-top:0.5em;
+}
+#contact #send{
+    width:fit-content;
     background-color: black;
     color:white;
     padding: 0.5em 1em;
+    margin: 1em 0;
     border: none;
     float: right;
 }
@@ -162,6 +207,117 @@ h2{
 
 #map img{
     width: 100%;
-    margin-top: 5em;
     vertical-align: bottom;
+}
+footer{
+    display: flex;
+    color: #949494;
+    height: 10em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer a{  
+    color:#949494;
+    font-size: 1.5em;
+}
+footer p{
+    font-size: 0.7em;
+    padding-top: 1.5em;
+}
+footer .textDeco{
+    text-decoration: underline;
+}
+footer .text{
+    display: none;
+}
+
+/* responsive */
+
+@media screen and (min-width:576px) {
+    
+    /* header */
+    
+    header nav a,
+    header nav form{
+        display: block;
+    }
+    header ul{
+        display: flex;
+    }
+    .iconBurger{
+        display: none;
+    }
+    .hide{
+        display: block;
+        font-size: 1em;
+        padding: 0.5em;
+    }
+    #headerImg p{
+        padding-bottom: 3em;
+    }
+
+    /* section band - carte de membres */
+
+    #card{
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    /* section tour */
+
+    #tour{
+        padding-bottom: 3em;
+    }
+    .sold,
+    #cardTour,
+    #contact{
+        width: 60%;
+    }
+    .available{
+        margin-right: 2em;
+    }
+    #cardTour{
+        display: flex;   
+        justify-content: space-between;
+    }
+    #cardTour figure{
+        width: 31%;
+    }
+
+    /* section contact */
+
+   .contact{
+       display: flex;
+   }
+   #contact form{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+   }
+   #contact .icon{
+       width: 50%;
+   }
+   #contact form .inputM{
+       width: 100%;
+   }
+
+   #contact form div{
+       width: 48%;
+   }
+   .send{
+       margin-left: auto;
+   }
+
+   /* footer */
+
+   footer .textDeco{
+       display: none;
+   }
+   footer .text{
+       display: inline;
+       text-decoration: underline;
+   } 
 }

@@ -57,10 +57,11 @@
     <main>
         <section id="band">
             <h1>THE BAND</h1>
-            <P><span class="italic">We love music</span></P>
+            <P class="italic">We love music</P>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum harum nobis eveniet, error ea itaque
                 quaerat est expedita provident nihil accusamus repellendus, recusandae impedit doloremque et non
-                molestiae quisquam! Blanditiis?</p>
+                molestiae quisquam! Blanditiis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique hic nisi sequi repellendus eligendi. Fugiat corporis labore modi delectus, impedit odit obcaecati fuga vel quis consequuntur officia ullam assumenda.</p>
             <div id="card">
                 <figure>
                     <figcaption>Name</figcaption>
@@ -81,9 +82,9 @@
             <p class="italic">Remember to book youir tickets !</p>
             <div class="sold">
                 <p>September<span class="out">Sold out</span></p>
-                <hr>
+                
                 <p>October<span class="out">Sold out</span></p>
-                <hr>
+                
                 <p>November<span class="available">3</span></p>
             </div>
             <div id=cardTour>
@@ -125,23 +126,27 @@
         <section id="contact">
             <h2>CONTACT</h2>
             <p class="italic">Fan? Drop a note!</p>
-            <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
-            <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
-            <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
-            <form action="post">
-                <div>
-                    <input type="text" placeholder="Name" value="">
-                </div>
-                <div>
-                    <input type="email" placeholder="Email" value="">
-                </div>
-                <div>
-                    <input type="text" placeholder="Message" value="">
-                </div>
-                <div>
-                    <input id="send" type="submit" value="SEND">
-                </div>
-            </form>
+            <div class="contact">
+                <div class="icon">
+                    <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
+                    <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
+                    <p><i class="fa-solid fa-envelope"></i>Email: mail@mail.com</p>
+                </div>   
+                <form method="post" action="">           
+                    <div class="input">
+                        <input type="text" placeholder="Name" value="">
+                    </div>
+                    <div class="input">
+                        <input type="email" placeholder="Email" value="">
+                    </div>                   
+                    <div class="inputM">
+                        <input type="text" placeholder="Message" value="">
+                    </div>
+                    <div class="send">
+                        <input id="send" type="submit" value="SEND">
+                    </div>
+                </form>
+            </div>
         </section>
         <section id="map">
             <div>
@@ -150,7 +155,14 @@
         </section>
     </main>
     <footer>
-
+        <div>
+            <a href=""><i class="fa-brands fa-facebook-square"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-snapchat-square"></i></a>
+            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <p>Powered by <span class="textDeco">w3.css</span><span class="text">Alban</span></p>
     </footer>
 </body>
 
